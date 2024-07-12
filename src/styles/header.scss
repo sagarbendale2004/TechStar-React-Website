@@ -1,0 +1,42 @@
+@import "colors";
+
+nav {
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    background-color: $first;
+    top: 0%;
+    z-index: 10;
+
+
+    > h1 {
+      text-transform: uppercase;
+    }
+
+    > main {
+      width: 70%;
+      display: flex;
+      justify-content: flex-end;
+
+
+      > a {
+        color: $dark;
+        margin: 1rem;
+
+        &:hover{
+          color: $third;
+        }
+      }
+      
+    }
+  }
+
+nav > a {
+    // font: 600 1.4rem cursive;
+    color: rgb(37, 105, 200);
+    text-decoration: none;
+    margin: 0 1rem;
+}
