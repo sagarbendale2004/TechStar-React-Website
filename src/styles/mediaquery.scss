@@ -26,6 +26,7 @@
         justify-content: center;
         a {
           margin: 0.5rem;
+          font: 100 1.1rem cursive;
         }
       }
     }
@@ -45,6 +46,11 @@
       }
       > div {
         width: 100%;
+
+        > p {
+          margin-bottom: 13rem;
+          font-size: 1rem;
+        }
       }
     }
   
@@ -54,10 +60,16 @@
         text-align: center;
         width: 100%;
         border-radius: 0;
+
+        > h1 {
+          margin-bottom: 2rem;
+        }
+
         > p {
-          padding: 5rem 2rem;
+          padding: 1rem;
           font-size: 0.9rem;
           line-height: 150%;
+          margin-bottom: 4rem;
         }
       }
     }
@@ -68,6 +80,18 @@
         border-radius: 0%;
         width: 100%;
         height: unset;
+
+        > article {
+
+          > div {
+            height: 8rem;
+            width: 8rem;
+
+            > p {
+              font: 900 .9rem cursive;
+            }
+          }
+        }
       }
     }
   
