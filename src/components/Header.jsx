@@ -1,20 +1,18 @@
 import "../styles/header.scss";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link/dist/react-router-hash-link.cjs.production";
 
 function Header() {
   return (
     <nav>
       <h1>TechStar.</h1>
       <main>
-        <Link to={"/"}>Home</Link>
+        <Link to={"/#home"}>Home</Link>
         <Link to={"/contact"}>Contact</Link>
-        <Link to={"/about"}>About</Link>
-        <Link to={"/#brands"}>Brands</Link>
+        <HashLink to={"/#about"}>About</HashLink>
+        <HashLink to={"/#brands"}>Brands</HashLink>
         <Link to={"/services"}>Services</Link>
       </main>
-      {/* <a href="/">Home</a>
-      <a href="/about">About</a>
-      <a href="/contact">Contact</a> */}
     </nav>
   );
 }
